@@ -249,3 +249,59 @@ a.pill-outline:hover { background: var(--ink); color: #fff; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* ---------- /boop: more space, pink accents, one size smaller ---------- */
+.page-boop { --pink-soft: #fff0f7; --pink-mid: #ffd6ea; font-size: 15px; }
+.page-boop .cs-head { padding-top: 64px; }
+.page-boop .cs-head .pills span { border-color: var(--pink); color: var(--pink); font-size: 12px; }
+.page-boop .cs-head h1 { font-size: clamp(44px, 5.4vw, 64px); margin: 32px 0 10px; }
+.page-boop .cs-head .sub { font-size: clamp(18px, 2.1vw, 28px); }
+.page-boop .meta { margin-top: 72px; }
+.page-boop .meta h2 { font-size: 11px; color: var(--pink); }
+.page-boop .meta p, .page-boop .meta li { font-size: 13px; }
+.page-boop .cs-section { padding-top: 180px; }
+.page-boop .kicker { font-size: 12px; color: var(--pink); font-weight: 600; letter-spacing: .04em; margin-bottom: 18px; }
+.page-boop .cs-section h2 { font-size: clamp(22px, 2.2vw, 28px); margin-bottom: 28px; }
+.page-boop .cs-section .body { font-size: 15px; line-height: 1.75; max-width: 880px; }
+.page-boop .cs-section .body p + p { margin-top: 18px; }
+.page-boop .cards-3, .page-boop .voices { gap: 64px; margin-top: 64px; }
+.page-boop .step-card { background: var(--pink-soft); padding: 44px 40px 52px; }
+.page-boop .step-card .n { font-size: 20px; color: var(--pink); font-weight: 600; }
+.page-boop .step-card h3, .page-boop .need h3 { font-size: 21px; }
+.page-boop .step-card p, .page-boop .need p { font-size: 13px; line-height: 1.6; }
+.page-boop .hmw { margin-top: 64px; padding: 36px 40px; background: var(--pink-soft); border-left: 3px solid var(--pink); border-radius: 0 14px 14px 0; font-size: 15px; }
+.page-boop .hmw b { font-size: clamp(18px, 1.8vw, 22px); color: var(--pink); }
+.page-boop .bubble { font-size: 14px; }
+.page-boop .bubble cite { font-size: 13px; }
+.page-boop .need { background: var(--card); }
+.page-boop .figure { margin-top: 64px; }
+.page-boop .gap-row { gap: 32px; margin-top: 56px; }
+.page-boop .gap-row .need h3 { font-size: 18px; }
+.page-boop .gap-row .need .k { font-size: 11px; }
+.page-boop .gap-row .need.us { background: var(--pink-mid); }
+.page-boop .gap-row .need.us .k { color: var(--pink); }
+.page-boop .loop { gap: 40px; margin-top: 64px; }
+.page-boop .loop li { border-top-color: var(--pink); }
+.page-boop .loop b { font-size: 18px; }
+.page-boop .loop span { font-size: 13px; line-height: 1.65; }
+.page-boop .principles { gap: 32px; margin-top: 64px; }
+.page-boop .principles div { background: var(--pink-soft); padding: 32px; }
+.page-boop .principles h3 { font-size: 16px; }
+.page-boop .principles p { font-size: 13px; }
+.page-boop .stats { gap: 40px; margin-top: 64px; }
+.page-boop .stat { border-top-color: var(--pink); }
+.page-boop .stat b { font-size: clamp(28px, 3.2vw, 42px); color: var(--pink); }
+.page-boop .stat span { font-size: 13px; }
+.page-boop .roadmap { margin-top: 72px; gap: 28px; }
+.page-boop .roadmap b { font-size: 15px; }
+.page-boop .roadmap li { font-size: 13px; }
+.page-boop .big-quote { font-size: clamp(20px, 2.3vw, 28px); }
+.page-boop .vision { background: var(--pink-soft); border-radius: 24px; padding: 72px 64px; }
+.page-boop .back { margin-top: 56px; }
+.page-boop .site-footer { margin-top: 180px; }
+@media (max-width: 760px) {
+  .page-boop .cs-section { padding-top: 112px; }
+  .page-boop .cards-3, .page-boop .voices { gap: 32px; }
+  .page-boop .vision { padding: 40px 24px; }
+  .page-boop .hmw { padding: 24px; }
+}
