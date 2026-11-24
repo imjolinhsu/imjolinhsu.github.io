@@ -103,12 +103,13 @@ a.pill-outline:hover { background: var(--ink); color: #fff; }
   transition: opacity .2s ease, transform .25s cubic-bezier(.2,.9,.3,1.3);
   box-shadow: 0 6px 18px rgba(255, 31, 143, .35);
 }
+.cursor-tag.is-soon { background: #fff; color: var(--hot-pink); box-shadow: inset 0 0 0 1.5px var(--hot-pink), 0 6px 18px rgba(255, 31, 143, .2); }
 .cursor-tag.is-on { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 @media (hover: hover) and (pointer: fine) { .has-cursor-tag .card { cursor: none; } }
 .soon-badge { display: none; }
 @media (hover: none) {
   .soon-badge {
-    display: block; position: absolute; top: 12px; left: 12px; background: var(--hot-pink); color: #fff;
+    display: block; position: absolute; top: 12px; left: 12px; background: #fff; color: var(--hot-pink); border: 1.5px solid var(--hot-pink);
     font-size: 12px; font-weight: 600; padding: 6px 12px; border-radius: 999px;
   }
 }

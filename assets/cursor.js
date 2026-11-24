@@ -25,6 +25,7 @@
     card.addEventListener("mouseenter", function (e) {
       x = e.clientX; y = e.clientY; place();
       tag.textContent = card.getAttribute("data-cursor");
+      tag.classList.toggle("is-soon", card.getAttribute("data-cursor") === "Coming soon");
       tag.classList.add("is-on");
     });
     card.addEventListener("mouseleave", function () {
