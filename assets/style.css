@@ -10,6 +10,7 @@
   --tag: #f0f0f0;
   --bg: #ffffff;
   --pink: #1b2a57;
+  --hot-pink: #ff1f8f;
   --star: #f5c518;
   --dot: #7cc4ef;
   --max: 1152px;
@@ -96,18 +97,18 @@ a.pill-outline:hover { background: var(--ink); color: #fff; }
 /* ---------- Custom cursor tag ---------- */
 .cursor-tag {
   position: fixed; left: 0; top: 0; z-index: 1000; pointer-events: none;
-  padding: 12px 24px; border-radius: 999px; background: var(--pink); color: #fff;
+  padding: 12px 24px; border-radius: 999px; background: var(--hot-pink); color: #fff;
   font: 600 15px/1 var(--font); text-align: center; white-space: nowrap;
   transform: translate(-50%, -50%) scale(.3); opacity: 0;
   transition: opacity .2s ease, transform .25s cubic-bezier(.2,.9,.3,1.3);
-  box-shadow: 0 6px 18px rgba(27, 42, 87, .35);
+  box-shadow: 0 6px 18px rgba(255, 31, 143, .35);
 }
 .cursor-tag.is-on { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 @media (hover: hover) and (pointer: fine) { .has-cursor-tag .card { cursor: none; } }
 .soon-badge { display: none; }
 @media (hover: none) {
   .soon-badge {
-    display: block; position: absolute; top: 12px; left: 12px; background: var(--pink); color: #fff;
+    display: block; position: absolute; top: 12px; left: 12px; background: var(--hot-pink); color: #fff;
     font-size: 12px; font-weight: 600; padding: 6px 12px; border-radius: 999px;
   }
 }
